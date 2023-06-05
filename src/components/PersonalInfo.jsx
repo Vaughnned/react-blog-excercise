@@ -49,13 +49,13 @@ export default function Info() {
         />
         <input type="submit" />
       </form>
-      {persInfo.map((info) => (
-        <>
+      {persInfo.map((info, index) => (
+        <div key={info.number}>
           <div>{info.first}</div>
           <div>{info.last}</div>
           <div>{info.address}</div>
           <div>{info.number}</div>
-        </>
+        </div>
       ))}
     </div>
   );
